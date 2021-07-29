@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Karla:wght@200&display=swap");
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+body,
+#root {
+  height: 100vh;
+  margin: 0;
+}
+body,
+input,
+select,
+textarea {
+  font-size: 1.6rem;
+  font-family: "Karla", sans-serif;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+  grid-template-rows: 5rem 1fr 5rem;
+  grid-template-columns: 1fr;
+  height: 100%;
+}
+a:hover {
+  color: rgb(252, 200, 90);
+}
+header {
+  grid-area: header;
+  background-color: rgb(19, 0, 34);
+  color: aliceblue;
+  display: flex;
+  align-items: center;
+  padding: 2rem;
+}
+header a {
+  color: aliceblue;
+  text-decoration: none;
+}
+main {
+  grid-area: main;
+}
+footer {
+  background-color: rgb(19, 0, 34);
+  color: aliceblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
